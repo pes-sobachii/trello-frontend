@@ -1,0 +1,93 @@
+.container {
+    padding: 25px;
+}
+
+.label {
+    font-size: 30px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.inputRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+}
+
+.inputFrame {
+    width: 32%;
+    flex: 1 1 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    font-size: 1rem;
+}
+
+
+.input {
+    display: inline-block;
+    padding: 10px;
+    flex: 1 1 auto;
+    border: 2px solid #1e88fd;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.buttonsTitle{
+    text-align: center;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.order button, .addButton{
+    background-color: #1e88fd;
+    color: ghostwhite;
+    cursor: pointer;
+}
+
+.order button.active{
+    background-color: #14569f;
+}
+
+.addButton {
+    padding: 13px 10px;
+    flex: 1 1 5%;
+    display: block;
+    text-decoration: none;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.order{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order button{
+    padding: 10px 20px;
+}
+
+@media (max-width: 900px) {
+    .inputFrame {
+        width: 60%;
+    }
+}
+
+@media (max-width: 550px) {
+    .inputFrame {
+        width: 100%;
+    }
+}

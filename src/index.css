@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNJzHn6jpKCRVisVe4wce8p0MI2ka1gP_yA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Ebrima, sans-serif;
+}
+
+
+button, input {
+    all: unset;
+}
