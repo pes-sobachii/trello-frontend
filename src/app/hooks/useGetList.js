@@ -10,7 +10,7 @@ export const useGetList = (setListsState) => {
         getLists,
         {
             onSuccess: ({data}) => {
-                setListsState(data)
+                setListsState([...data])
             },
             onError: (err) => {
                 alert(err.message)

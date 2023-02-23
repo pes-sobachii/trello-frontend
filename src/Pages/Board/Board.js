@@ -31,7 +31,7 @@ const Board = () => {
             <Heading order={sortOrder} setOrder={setSortOrder}/>
             <div className={styles.row}>
                 <DragDropContext onDragEnd={result => onDragEnd(result, listsState, setListsState, cardUpdate)}>
-                    {listsState.length <= 0 ? <BoardPlug/> : listsState.map((list, index) => {
+                    {listsState.length <= 0 ? <BoardPlug/> : [...listsState].map((list, index) => {
                         return (<div key={index} className={styles.column}>
                             <div className={styles.listTitle}>{list.title}</div>
                             <div className={styles.list}>
